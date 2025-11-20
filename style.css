@@ -1,4 +1,4 @@
-* {
+*{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -156,6 +156,9 @@
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         
         .project-card:hover {
@@ -172,6 +175,10 @@
         
         .project-info {
             padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         
         .project-title {
@@ -184,19 +191,28 @@
             color: #b0b0d0;
             margin-bottom: 15px;
             line-height: 1.5;
+            flex-grow: 1;
+        }
+        
+        .project-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
         }
         
         .video-btn {
-            display: block;
             width: 60px;
             height: 60px;
-            margin: 0 auto;
             background: linear-gradient(45deg, #4361ee, #3a0ca3);
             border-radius: 50%;
             border: none;
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(67, 97, 238, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
         .video-btn:hover {
@@ -207,8 +223,46 @@
         .video-btn img {
             width: 30px;
             height: 30px;
-            margin-top: 5px;
-            margin-left: 5px;
+        }
+        
+        .company-btn {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #4cc9f0, #f72585);
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(76, 201, 240, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; 
+        }
+
+        .company-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(76, 201, 240, 0.6);
+        }
+
+        .company-btn img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            object-position: center;
+            border-radius: 50%; 
+        }
+        
+        .company-link {
+            color: #4cc9f0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .company-link:hover {
+            color: #f72585;
+            text-decoration: underline;
         }
         
         .modal {
@@ -235,7 +289,7 @@
         
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
         }
@@ -276,19 +330,6 @@
             border-top: 1px solid #333350;
         }
         
-        @media (max-width: 768px) {
-            .profile-card {
-                flex-direction: column;
-            }
-            
-            h1 {
-                font-size: 2.2rem;
-            }
-            
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-        }
         .social-links {
             margin-top: 15px;
             display: flex;
@@ -305,4 +346,18 @@
         .social-links a:hover {
             color: #f72585;
             transform: scale(1.2);
+        }
+        
+        @media (max-width: 768px) {
+            .profile-card {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
         }
