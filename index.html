@@ -1,221 +1,430 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио Unity-разработчика - Пушкарев Евгений</title>
+    <title>Евгений Пушкарев - Level Designer / Technical Level Designer</title>
+    <meta name="description" content="Портфолио Level Designer / Technical Level Designer: интерактивные сценарии, уровни Unity, события в сцене, пользовательский маршрут и документация.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="hero">
+            <p class="eyebrow">Level Designer / Technical Level Designer</p>
             <h1>Евгений Пушкарев</h1>
-            <p class="subtitle">Unity-разработчик / Создатель виртуальных тренажеров и приложений</p>
+            <p class="subtitle">Проектирую интерактивные уровни и сценарии в Unity: пользовательский маршрут, игровые механики, события в сцене, зоны взаимодействия, условия успеха/провала и обратную связь через интерфейс.</p>
+            <div class="hero-tags" aria-label="Ключевые навыки">
+                <span>Unity</span>
+                <span>Level Design</span>
+                <span>Interactive Scenarios</span>
+                <span>Scripted Events</span>
+                <span>Gameplay Systems</span>
+                <span>Documentation</span>
+            </div>
+            <div class="hero-actions">
+                <a class="primary-btn" href="#portfolio">Смотреть проекты</a>
+                <a class="secondary-btn" href="#contacts">Связаться</a>
+            </div>
         </header>
 
-        <div class="profile-card">
-            <div class="photo-section">
-                <img src="assets/img/photo.jpg" alt="Фото разработчика" class="photo">
-            </div>
-            <div class="info-section">
-                <h2 class="section-title">Обо мне</h2>
-                <div class="about-content">
-                    <p>Привет! Я - Unity-разработчик с более чем 3-летним опытом создания сложных образовательных симуляций для технических специалистов. Специализируюсь на разработке интерактивных тренажёров с реалистичной физикой, кастомными измерительными приборами и динамическими сценариями - от электротехники до защиты от БПЛА. </p>
-                    <br>
-                    <p>Имею опыт работы с C#, ScriptableObject, UI Toolkit, Shader Graph и DOTween, строю масштабируемые архитектуры, внедряю реалистичную физику и интерактивные измерительные инструменты.</p>
-                    <br>
-                    <p>Готов к сотрудничеству над интересными проектами.</p>
+        <main>
+            <section class="profile-card" aria-labelledby="about-title">
+                <div class="photo-section">
+                    <img src="assets/img/photo.jpg" alt="Евгений Пушкарев" class="photo">
                 </div>
-            </div>
-        </div>
-
-        <div class="experience-section">
-            <h2 class="section-title">Опыт работы</h2>
-            <div class="experience-item">
-                <div class="job-title">Unity Developer</div>
-                <div class="company">НПП Учтех-Профи (Dokisan systems)</div>
-                <div class="duration">Август 2022 - настоящее время</div>
-                <div class="job-description">
-                    <p>В рамках компании разрабатывал интерактивные виртуальные тренажёры для технического обучения в сфере безопасности, электротехники и информационной защиты. Участие в полном цикле разработки от концепции до релиза. Работа с дизайнером. Реализация сложных механик и физических симуляций.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="experience-section">
-            <h2 class="section-title">Портфолио</h2>
-            <div class="projects-grid">
-
-                <div class="project-card">
-                    <img src="assets/img/uav.png" alt="Защита от БПЛА" class="project-image">
-                    <div class="project-info">
-                        <h3 class="project-title">Защита от БПЛА</h3>
-                        <p class="project-desc">Виртуальный тренажёр «Защита от БПЛА» позволяет пользователю расставлять и настраивать средства обнаружения и подавления дронов, наблюдать за их работой в реальном времени и тестировать защиту территории на сценариях атаки.</p>
-                        <div class="project-actions">
-                            <button class="video-btn" onclick="openVideo('https://rutube.ru/play/embed/bf0106d94f4ac3c1b777f2b91be1d0c7')">
-                                <img src="assets/img/play_icon.png" alt="Видео">
-                            </button>
-                            <a href="https://dokisan.com/catalog2023/cat_ziisb/bpla/" target="_blank" class="company-btn">
-                                <img src="assets/img/DKSLogo.png" alt="Логотип компании">
-                            </a>
-                        </div>
+                <div class="info-section">
+                    <h2 class="section-title" id="about-title">Обо мне</h2>
+                    <div class="about-content">
+                        <p>Я Game Designer / Level Designer с фокусом на Technical Level Design и 4 годами опыта в Unity. Участвовал в полном цикле разработки 10 интерактивных проектов: от GDD, прототипирования и blockout до финальной сборки, тестирования и пользовательской документации.</p>
+                        <p>Собрал 20+ сцен и 23 локации: планировка, маршруты пользователя, точки интереса, интерактивные зоны, камеры, освещение, триггеры и события в сцене. Подготовил 40+ проектных документов: GDD, ТЗ, схемы прохождения, описания механик, чек-листы и руководства пользователя.</p>
+                        <p>Моя сильная сторона - соединять дизайн и техническую реализацию: не только описывать механику, но и собирать её в движке через интерактивные зоны, триггеры, сценарные события, NPC/объектные маршруты и UI-feedback.</p>
                     </div>
                 </div>
+            </section>
 
-                <div class="project-card">
-                    <img src="assets/img/rele.png" alt="rele base" class="project-image">
-                    <div class="project-info">
-                        <h3 class="project-title">Основы релейной техники</h3>
-                        <p class="project-desc">Изучение работы реле, их устройства и применения в электрических цепях. Позволяет собирать схемы, подключать питание и нагрузку, а также наблюдать за поведением реле при изменении параметров.</p>
-                        <div class="project-actions">
-                            <button class="video-btn" onclick="openVideo('https://rutube.ru/play/embed/6eedc5f95f6e90b3b6766a7eb8994399')">
-                                <img src="assets/img/play_icon.png" alt="Видео">
-                            </button>
-                            <a href="https://dokisan.com/tren-rele/" target="_blank" class="company-btn">
-                                <img src="assets/img/DKSLogo.png" alt="Логотип компании">
-                            </a>
+            <section class="notice-section" aria-labelledby="notice-title">
+                <h2 class="section-title" id="notice-title">Важно о проектах</h2>
+                <p>Проекты выполнены в рамках работы в Dokisan Systems. Исходный код и внутренние материалы не публикуются, так как принадлежат компании. В портфолио представлены публичные видео, скриншоты и разбор моей зоны ответственности: проектирование сценариев, уровней, интерактивных механик и логики прохождения.</p>
+            </section>
+
+            <section class="experience-section" aria-labelledby="experience-title">
+                <h2 class="section-title" id="experience-title">Опыт работы</h2>
+                <article class="experience-item">
+                    <div class="job-title">Level Designer / Technical Level Designer</div>
+                    <div class="company">НПП Учтех-Профи / Dokisan Systems</div>
+                    <div class="duration">Июль 2022 - настоящее время</div>
+                    <div class="metrics-grid" aria-label="Ключевые результаты">
+                        <div><strong>10</strong><span>интерактивных проектов</span></div>
+                        <div><strong>20+</strong><span>сцен в Unity</span></div>
+                        <div><strong>23</strong><span>локации</span></div>
+                        <div><strong>40+</strong><span>документов</span></div>
+                        <div><strong>1-1,5</strong><span>месяца экономии</span></div>
+                    </div>
+                    <div class="job-description">
+                        <p>В рамках компании проектировал и собирал интерактивные обучающие проекты в Unity. Отвечал за пользовательский маршрут, структуру сценариев, интерактивные механики, события в сцене, условия прохождения и документацию.</p>
+                        <h3>Ключевые результаты:</h3>
+                        <ul>
+                            <li>Участвовал в разработке и релизе проектов: от GDD, прототипирования и blockout до финальной сборки, тестирования и пользовательской документации.</li>
+                            <li>Собирал сцены: планировка, маршруты пользователя, точки интереса, интерактивные зоны, камеры, освещение, триггеры и события в сцене.</li>
+                            <li>Проектировал сценарии прохождения: порядок действий, подсказки, ошибки, ограничения, условия успеха и провала.</li>
+                            <li>Настраивал сценарные события: NPC/объекты, маршруты движения, реакции на действия пользователя, таймеры, датчики, чек-листы и итоговую оценку.</li>
+                            <li>Взаимодействовал с 3D-художником, интегрировал готовые объекты в сцены и использовал Git/GitHub Desktop для командной работы.</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <section class="experience-section" id="portfolio" aria-labelledby="portfolio-title">
+                <h2 class="section-title" id="portfolio-title">Портфолио</h2>
+                <p class="section-intro">Ниже - проекты, где я отвечал за проектирование интерактивных сценариев, сборку сцен в Unity, логику прохождения, пользовательскую обратную связь и документацию.</p>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <img src="assets/img/uav.png" alt="Интерфейс проекта Защита от БПЛА" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Защита от БПЛА</h3>
+                            <p class="project-role">Level Designer / Technical Level Designer</p>
+                            <p class="project-desc">Интерактивный сценарий защиты территории от БПЛА с картой, зонами обнаружения, подавления и маршрутом угроз.</p>
+                            <div class="project-columns">
+                                <div>
+                                    <h4>Проектировал:</h4>
+                                    <ul>
+                                        <li>карту с 3 локациями;</li>
+                                        <li>маршруты и точки угроз;</li>
+                                        <li>зоны обнаружения и подавления.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Реализовал в Unity:</h4>
+                                    <ul>
+                                        <li>сцены и зоны;</li>
+                                        <li>UI-слои карты;</li>
+                                        <li>условия успеха/провала.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <button class="video-btn" onclick="openVideo('https://rutube.ru/play/embed/bf0106d94f4ac3c1b777f2b91be1d0c7')">Видео</button>
+                                <button class="company-btn" onclick="openProjectDetails('uav')">Подробнее</button>
+                            </div>
                         </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="assets/img/neispr.png" alt="Сцена диагностики электродвигателя" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Неисправности электродвигателя</h3>
+                            <p class="project-role">Level Designer / Technical Level Designer</p>
+                            <p class="project-desc">Интерактивный сценарий диагностики оборудования с пошаговыми действиями, проверкой ошибок и итоговой оценкой.</p>
+                            <div class="project-columns">
+                                <div>
+                                    <h4>Проектировал:</h4>
+                                    <ul>
+                                        <li>рабочую сцену;</li>
+                                        <li>8 лабораторных сценариев;</li>
+                                        <li>проверки ошибок.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Реализовал в Unity:</h4>
+                                    <ul>
+                                        <li>интерактивные зоны;</li>
+                                        <li>пошаговую логику;</li>
+                                        <li>журнал и оценку.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <button class="video-btn" onclick="openVideo('https://rutube.ru/play/embed/0a0f5670c55e05e130606e65f3ce6981')">Видео</button>
+                                <button class="company-btn" onclick="openProjectDetails('motor')">Подробнее</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="assets/img/pp.png" alt="Монтаж коммутационной патч-панели" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Монтаж коммутационной патч-панели</h3>
+                            <p class="project-role">Technical Level Designer / Gameplay Systems</p>
+                            <p class="project-desc">Пошаговый сценарий монтажа патч-панели: кабель, патч-корд, проверка подключения, установка в стойку и пучки.</p>
+                            <div class="project-columns">
+                                <div>
+                                    <h4>Проектировал:</h4>
+                                    <ul>
+                                        <li>маршрут монтажа;</li>
+                                        <li>правила проверок;</li>
+                                        <li>сценарии ошибок.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Реализовал в Unity:</h4>
+                                    <ul>
+                                        <li>логику операций;</li>
+                                        <li>инструменты и зоны;</li>
+                                        <li>UI-feedback.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <button class="video-btn" onclick="openVideo('https://rutube.ru/play/embed/874db68f4a5f49bc633442014bc7808b')">Видео</button>
+                                <button class="company-btn" onclick="openProjectDetails('patch')">Подробнее</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="assets/img/pos.png" alt="Офисная локация пожарной и охранной сигнализации" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Пожарная и охранная сигнализация</h3>
+                            <p class="project-role">Level Designer / Technical Level Designer</p>
+                            <p class="project-desc">Офисная локация для сценариев пожарной и охранной проверки с датчиками, системами и NPC-нарушителем.</p>
+                            <div class="project-columns">
+                                <div>
+                                    <h4>Проектировал:</h4>
+                                    <ul>
+                                        <li>планировку локации;</li>
+                                        <li>зоны покрытия;</li>
+                                        <li>маршрут NPC.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Реализовал в Unity:</h4>
+                                    <ul>
+                                        <li>общую локацию;</li>
+                                        <li>сценарии пожара;</li>
+                                        <li>UI-индикацию.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <button class="video-btn" onclick="openVideo('https://rutube.ru/play/embed/db8b026b6f43b6e7b2b8a249664fadc8')">Видео</button>
+                                <button class="company-btn" onclick="openProjectDetails('security')">Подробнее</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="assets/img/radioMont.png" alt="Рабочее место радиомонтажника" class="project-image">
+                        <div class="project-info">
+                            <h3 class="project-title">Рабочее место радиомонтажника</h3>
+                            <p class="project-role">Technical Level Designer / Gameplay Systems</p>
+                            <p class="project-desc">Интерактивный тренажёр для пайки, монтажа и работы с радиоэлектронными компонентами.</p>
+                            <div class="project-columns">
+                                <div>
+                                    <h4>Проектировал:</h4>
+                                    <ul>
+                                        <li>порядок действий;</li>
+                                        <li>интерактивные зоны;</li>
+                                        <li>правила проверок.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Реализовал в Unity:</h4>
+                                    <ul>
+                                        <li>инструменты;</li>
+                                        <li>пошаговые операции;</li>
+                                        <li>визуальную обратную связь.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <button class="video-btn" onclick="openVideo('https://rutube.ru/play/embed/38ced38df054aa47db7599fd8091b903')">Видео</button>
+                                <button class="company-btn" onclick="openProjectDetails('radio')">Подробнее</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="experience-section skills-section" aria-labelledby="skills-title">
+                <h2 class="section-title" id="skills-title">Навыки</h2>
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h3>Game / Level Design</h3>
+                        <ul>
+                            <li>сценарии прохождения</li>
+                            <li>blockout / gray box</li>
+                            <li>layout сцен</li>
+                            <li>пользовательский маршрут</li>
+                            <li>точки интереса</li>
+                            <li>интерактивные зоны</li>
+                            <li>условия успеха/провала</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Technical Design</h3>
+                        <ul>
+                            <li>Unity</li>
+                            <li>C#</li>
+                            <li>ScriptableObject</li>
+                            <li>Prefabs</li>
+                            <li>UI Toolkit</li>
+                            <li>New Input System</li>
+                            <li>DOTween</li>
+                            <li>Shader Graph</li>
+                            <li>Blueprints</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Blender</li>
+                            <li>3ds Max</li>
+                            <li>Git</li>
+                            <li>GitHub Desktop</li>
+                            <li>code review</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Documentation</h3>
+                        <ul>
+                            <li>GDD</li>
+                            <li>ТЗ</li>
+                            <li>схемы прохождения</li>
+                            <li>описание механик</li>
+                            <li>чек-листы</li>
+                            <li>руководства пользователя</li>
+                        </ul>
                     </div>
                 </div>
+            </section>
+        </main>
 
-                <div class="project-card">
-                    <img src="assets/img/pp.png" alt="Patch panel" class="project-image">
-                    <div class="project-info">
-                        <h3 class="project-title">Монтаж коммутационной патч-панели</h3>
-                        <p class="project-desc">Виртуальный тренажер предназначен для обучения навыкам работы с патч-панелями, изучения стандартов и процедур монтажа, подключения и проверки оборудования в структурированных кабельных системах.</p>
-                        <div class="project-actions">
-                            <button class="video-btn" onclick="openVideo('https://rutube.ru/play/embed/874db68f4a5f49bc633442014bc7808b')">
-                                <img src="assets/img/play_icon.png" alt="Видео">
-                            </button>
-                            <a href="https://dokisan.com/catalog2023/cat_network/sks-tren-pp/" target="_blank" class="company-btn">
-                                <img src="assets/img/DKSLogo.png" alt="Логотип компании">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/img/pos.png" alt="security" class="project-image">
-                    <div class="project-info">
-                        <h3 class="project-title">Пожарная и охранная сигнализация</h3>
-                        <p class="project-desc">Демонстрационная среда предназначена для изучения ГОСТ Р 52551-2016, типов датчиков, их зон действия и правил размещения. Позволяет устанавливать датчики в виртуальном помещении, визуализировать зоны контроля, проверять корректность монтажа путём симуляции срабатывания и изменять интерьер для различных сценариев.</p>
-                        <div class="project-actions">
-                            <button class="video-btn" onclick="openVideo('https://rutube.ru/play/embed/db8b026b6f43b6e7b2b8a249664fadc8')">
-                                <img src="assets/img/play_icon.png" alt="Видео">
-                            </button>
-                            <a href="https://dokisan.com/catalog2023/cat_ziisb/fzi-tren-pozohr/" target="_blank" class="company-btn">
-                                <img src="assets/img/DKSLogo.png" alt="Логотип компании">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/img/acusto.png" alt="acustovibro" class="project-image">
-                    <div class="project-info">
-                        <h3 class="project-title">Распространение сигнала в акустовибрационном канале</h3>
-                        <p class="project-desc">Изучения акустических и виброакустических каналов утечки информации. Позволяет визуализировать распространение звуковых волн через строительные конструкции и коммуникации, оценивать влияние положения источника и приёмника звука, а также моделировать установку средств защиты и проверять их эффективность.</p>
-                        <div class="project-actions">
-                            <button class="video-btn" onclick="openVideo('https://rutube.ru/play/embed/cf44ef25a7744356a7a73816273e9cc4')">
-                                <img src="assets/img/play_icon.png" alt="Видео">
-                            </button>
-                            <a href="https://dokisan.com/catalog2023/cat_ziisb/tzi-demo-akustovibro/" target="_blank" class="company-btn">
-                                <img src="assets/img/DKSLogo.png" alt="Логотип компании">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/img/armor.png" alt="armor" class="project-image">
-                    <div class="project-info">
-                        <h3 class="project-title">Устройство бронежилета</h3>
-                        <p class="project-desc">Виртуальный учебник знакомит с устройством, назначением и функциями бронежилета, предназначен для всех, кто интересуется защитой от огнестрельного и холодного оружия — как для профессионалов, так и для частных пользователей.</p>
-                        <div class="project-actions">
-                            <button class="video-btn" onclick="openVideo('https://rutube.ru/play/embed/0e717cb38d4d5919df8f19a613ccea62')">
-                                <img src="assets/img/play_icon.png" alt="Видео">
-                            </button>
-                            <a href="https://dokisan.com/catalog2023/cat_vp/bronik/" target="_blank" class="company-btn">
-                                <img src="assets/img/DKSLogo.png" alt="Логотип компании">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/img/radioMont.png" alt="RMR" class="project-image">
-                    <div class="project-info">
-                        <h3 class="project-title">Рабочее место радиомонтажника</h3>
-                        <p class="project-desc">Тренажёр предназначен для приобретения опыта и навыков пайки, монтажа и ремонта радиоэлектронных компонентов и устройств</p>
-                        <div class="project-actions">
-                            <button class="video-btn" onclick="openVideo('https://rutube.ru/play/embed/38ced38df054aa47db7599fd8091b903')">
-                                <img src="assets/img/play_icon.png" alt="Видео">
-                            </button>
-                            <a href="https://dokisan.com/catalog2023/cat_ele/electron-tren-rmr/" target="_blank" class="company-btn">
-                                <img src="assets/img/DKSLogo.png" alt="Логотип компании">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/img/neispr.png" alt="neispr" class="project-image">
-                    <div class="project-info">
-                        <h3 class="project-title">Неисправности электродвигателя</h3>
-                        <p class="project-desc">Тренажер предназначен для обучения и практической отработки навыков диагностики электродвигателей, изучения симптомов неисправностей, методов осмотра и проведения измерений для их выявления.</p>
-                        <div class="project-actions">
-                            <button class="video-btn" onclick="openVideo('https://rutube.ru/play/embed/0a0f5670c55e05e130606e65f3ce6981')">
-                                <img src="assets/img/play_icon.png" alt="Видео">
-                            </button>
-                            <a href="https://dokisan.com/ed-tren-neispr/" target="_blank" class="company-btn">
-                                <img src="assets/img/DKSLogo.png" alt="Логотип компании">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/img/sao.png" alt="sao" class="project-image">
-                    <div class="project-info">
-                        <h3 class="project-title">Система аварийного освещения</h3>
-                        <p class="project-desc">Виртуальный тренажёр позволяет освоить монтаж и настройку аварийных светильников, моделируя их размещение в помещении и проверку освещённости при отключении основного питания.</p>
-                        <div class="project-actions">
-                            <button class="video-btn" onclick="openVideo('https://rutube.ru/play/embed/3f8d10ed352ae1e1958721833c7838d7')">
-                                <img src="assets/img/play_icon.png" alt="Видео">
-                            </button>
-                            <a href="https://dokisan.com/catalog2023/cat_ziisb/sao/" target="_blank" class="company-btn">
-                                <img src="assets/img/DKSLogo.png" alt="Логотип компании">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer>
-            <p>© 2025 Евгений Пушкарев | Unity-разработчик</p>
-            <p>Контакты для связи: zenj.bakal@mail.ru</p>
+        <footer id="contacts">
+            <p>© 2026 Евгений Пушкарев | Level Designer / Technical Level Designer</p>
+            <p>Контакты для связи: <a href="mailto:xgenstudioz0@gmail.com">xgenstudioz0@gmail.com</a></p>
             <div class="social-links">
-                <a href="https://vk.com/evgexa_sugrob" target="_blank" title="Мой ВКонтакте">
+                <a href="https://vk.com/evgexa_sugrob" target="_blank" rel="noopener" title="ВКонтакте" aria-label="ВКонтакте">
                     <i class="fab fa-vk"></i>
                 </a>
-                <a href="https://t.me/EvgexaSugrob" target="_blank" title="Написать в Telegram">
+                <a href="https://t.me/EvgexaSugrob" target="_blank" rel="noopener" title="Telegram" aria-label="Telegram">
                     <i class="fab fa-telegram"></i>
                 </a>
             </div>
         </footer>
     </div>
 
-    <!-- Модал для видео -->
     <div class="modal" id="videoModal" aria-hidden="true">
-        <div class="modal-content" role="dialog" aria-modal="true">
+        <div class="modal-content video-modal-content" role="dialog" aria-modal="true" aria-label="Видео проекта">
             <button class="close-btn" onclick="closeVideo()" aria-label="Закрыть">&times;</button>
             <div class="video-container">
-                <iframe id="videoFrame" src="" frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+                <iframe id="videoFrame" src="" title="Видео проекта" frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="detailsModal" aria-hidden="true">
+        <div class="modal-content details-modal-content" role="dialog" aria-modal="true" aria-labelledby="detailsTitle">
+            <button class="close-btn" onclick="closeProjectDetails()" aria-label="Закрыть">&times;</button>
+            <div class="details-content">
+                <h2 id="detailsTitle"></h2>
+                <div id="detailsBody"></div>
             </div>
         </div>
     </div>
 
     <script>
+        const projectDetails = {
+            uav: {
+                title: 'Защита от БПЛА',
+                body: `
+                    <p><strong>Задача проекта:</strong> интерактивный сценарий защиты территории от БПЛА с картой, зонами обнаружения, зонами подавления, маршрутом угроз и системой отслеживания целей.</p>
+                    <p><strong>Моя роль:</strong> Level Designer / Technical Level Designer.</p>
+                    <h3>Что проектировал</h3>
+                    <ul>
+                        <li>карту с 3 локациями, точками интереса и зонами работы устройств;</li>
+                        <li>маршруты БПЛА, точки появления угроз и поведение целей;</li>
+                        <li>зоны обнаружения, подавления, логику разведки, атаки и реакции защитных систем;</li>
+                        <li>настройку сложности через количество угроз, маршруты и покрытие устройств.</li>
+                    </ul>
+                    <h3>Что реализовал в Unity</h3>
+                    <ul>
+                        <li>сцены и интерактивные зоны;</li>
+                        <li>UI-слои карты, маркеры целей и сценарные события;</li>
+                        <li>условия успешного и неуспешного прохождения.</li>
+                    </ul>
+                    <p><strong>Что можно посмотреть:</strong> публичное видео, скриншоты интерфейса, карту, зоны и логику сценария.</p>`
+            },
+            motor: {
+                title: 'Неисправности электродвигателя',
+                body: `
+                    <p><strong>Задача проекта:</strong> интерактивный сценарий диагностики оборудования с пошаговым выполнением, проверкой действий и итоговой оценкой.</p>
+                    <p><strong>Моя роль:</strong> Level Designer / Technical Level Designer.</p>
+                    <h3>Что проектировал</h3>
+                    <ul>
+                        <li>рабочую сцену с оборудованием, инструментами и интерактивными зонами;</li>
+                        <li>8 лабораторных сценариев, контрольный режим и порядок действий пользователя;</li>
+                        <li>обучение, самостоятельное прохождение, проверки ошибок и условия завершения сценария.</li>
+                    </ul>
+                    <h3>Что реализовал в Unity</h3>
+                    <ul>
+                        <li>интерактивные зоны оборудования;</li>
+                        <li>пошаговую логику действий пользователя;</li>
+                        <li>подсказки, журнал действий, интерфейсную обратную связь и финальную оценку результата.</li>
+                    </ul>
+                    <p><strong>Что можно посмотреть:</strong> видео сценария, рабочую сцену, интерфейс подсказок и проверку действий.</p>`
+            },
+            patch: {
+                title: 'Монтаж коммутационной патч-панели',
+                body: `
+                    <p><strong>Задача проекта:</strong> поэтапный сценарий монтажа патч-панели и создания патч-корда: подготовка кабеля, обжим, маркировка, монтаж, проверка подключения, установка панели в стойку и формирование пучков.</p>
+                    <p><strong>Моя роль:</strong> Technical Level Designer / Gameplay Systems.</p>
+                    <h3>Что проектировал</h3>
+                    <ul>
+                        <li>полный маршрут пользователя от подготовки кабеля до установки патч-панели;</li>
+                        <li>последовательность операций: зачистка, обжим, маркировка, забивка проводов, тестирование и исправление ошибок;</li>
+                        <li>интерактивные зоны для патч-панели, розеток, портов, кабелей и инструментов;</li>
+                        <li>правила проверки корректности подключения, выбора порта и расположения проводов.</li>
+                    </ul>
+                    <h3>Что реализовал в Unity</h3>
+                    <ul>
+                        <li>пошаговую логику монтажных операций;</li>
+                        <li>взаимодействие от первого лица с подсветкой доступных объектов;</li>
+                        <li>виртуальные инструменты: кабельный тестер, стриппер, инструмент для заделки, RJ45-коннектор и кримпер;</li>
+                        <li>UI-состояния для проверки результата, ошибок и режима исправления.</li>
+                    </ul>
+                    <p><strong>Что можно посмотреть:</strong> видео, работу с инструментами, выбор портов, проверку ошибок и UI-feedback.</p>`
+            },
+            security: {
+                title: 'Пожарная и охранная сигнализация',
+                body: `
+                    <p><strong>Задача проекта:</strong> интерактивная офисная локация для сценариев пожарной и охранной проверки.</p>
+                    <p><strong>Моя роль:</strong> Level Designer / Technical Level Designer.</p>
+                    <h3>Что проектировал</h3>
+                    <ul>
+                        <li>планировку локации, зоны покрытия датчиков и точки установки оборудования;</li>
+                        <li>распространение огня, срабатывание систем и проценты состояния помещений;</li>
+                        <li>маршрут NPC-нарушителя и условия успеха/провала.</li>
+                    </ul>
+                    <h3>Что реализовал в Unity</h3>
+                    <ul>
+                        <li>одну локацию для нескольких сценариев с разной логикой прохождения;</li>
+                        <li>визуализацию зон покрытия и сценарии пожара;</li>
+                        <li>события срабатывания систем и UI-индикацию состояния помещений.</li>
+                    </ul>
+                    <p><strong>Что можно посмотреть:</strong> видео, локацию, зоны датчиков, пожарный сценарий и охранную проверку.</p>`
+            },
+            radio: {
+                title: 'Рабочее место радиомонтажника',
+                body: `
+                    <p><strong>Задача проекта:</strong> интерактивный тренажёр для пайки, монтажа и работы с радиоэлектронными компонентами.</p>
+                    <p><strong>Моя роль:</strong> Technical Level Designer / Gameplay Systems.</p>
+                    <h3>Что проектировал</h3>
+                    <ul>
+                        <li>последовательность действий пользователя;</li>
+                        <li>интерактивные зоны рабочего места;</li>
+                        <li>правила проверки корректности действий и обратную связь при ошибках.</li>
+                    </ul>
+                    <h3>Что реализовал в Unity</h3>
+                    <ul>
+                        <li>интерактивные инструменты;</li>
+                        <li>пошаговое выполнение операций;</li>
+                        <li>проверки действий, подсказки и визуальную обратную связь.</li>
+                    </ul>
+                    <p><strong>Что можно посмотреть:</strong> видео, рабочее место, инструменты и пошаговое выполнение операций.</p>`
+            }
+        };
+
         function openVideo(embedUrl) {
             const iframe = document.getElementById('videoFrame');
             iframe.src = embedUrl + '?autoplay=1';
@@ -232,13 +441,32 @@
             modal.setAttribute('aria-hidden', 'true');
         }
 
+        function openProjectDetails(projectId) {
+            const data = projectDetails[projectId];
+            if (!data) return;
+            document.getElementById('detailsTitle').textContent = data.title;
+            document.getElementById('detailsBody').innerHTML = data.body;
+            const modal = document.getElementById('detailsModal');
+            modal.style.display = 'flex';
+            modal.setAttribute('aria-hidden', 'false');
+        }
+
+        function closeProjectDetails() {
+            const modal = document.getElementById('detailsModal');
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+        }
+
         window.addEventListener('click', function(event) {
-            const modal = document.getElementById('videoModal');
-            if (event.target === modal) closeVideo();
+            if (event.target === document.getElementById('videoModal')) closeVideo();
+            if (event.target === document.getElementById('detailsModal')) closeProjectDetails();
         });
 
         window.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeVideo();
+            if (e.key === 'Escape') {
+                closeVideo();
+                closeProjectDetails();
+            }
         });
     </script>
 </body>
